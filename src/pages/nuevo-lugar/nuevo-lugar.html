@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Agregar Lugar</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <p>Agregar un nuevo lugar</p>
+  <form (ngSubmit)="onAgregar(f.value)" #f="ngForm">
+    <ion-item>
+      <ion-label>Title</ion-label>
+      <ion-input typeof="text" name="title" ngModel required></ion-input>
+    </ion-item>
+    <button ion-button block typeof="submit" [disabled]="!f.valid">Agregar Lugar</button>
+  </form>
+</ion-content>
