@@ -13,6 +13,11 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item *ngFor="let lugar of lugares">{{lugar.title}}</ion-item>
+    <ion-item
+      *ngFor="let lugar of lugares"
+      (click)="onAbrirLugar(lugar)">{{lugar.title}}
+    </ion-item>
   </ion-list>
+
+  <button ion-button block (click)="onBorrarLugares()">Borrar Datos</button>
 </ion-content>

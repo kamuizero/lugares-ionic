@@ -16,4 +16,17 @@
     </ion-item>
     <button ion-button block typeof="submit" [disabled]="!f.valid">Agregar Lugar</button>
   </form>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button="" block (click)="onUbicarUsuario()">Obtener ubicacion</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p>Ubicacion: </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
